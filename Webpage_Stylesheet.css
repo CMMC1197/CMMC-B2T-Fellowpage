@@ -1,0 +1,327 @@
+html {
+ background-image: url("Images/watercolor_galaxy.jpg");
+ -o-background-size: cover;
+ background-size: cover;
+ justify-content: center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ position: relative;
+ text-align: center;
+ justify-content: center;
+ transition: 3s;
+}
+
+body {
+  background-image: url("Images/watercolor_galaxy.jpg");
+  -o-background-size: cover;
+  background-size: cover;
+  justify-content: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  transition: 3s;
+}
+
+@font-face {
+  font-family: "Fascinate";
+  src: url("Fascinate_Font/fascinate.ttf")
+  url("Fascinate_Font/fascinate.otf")
+  url("Fascinate_Font/fascinate.woff");
+  text-align: center;
+  position: relative;
+  transition: 3s;
+}
+
+@font-face {
+  font-family: "FascinateInline";
+  src: url("Fascinate_Inline_Font/Fascinate_Inline.ttf");
+  text-align: center;
+  position: relative;
+  transition: 3s;
+}
+
+img.roundedImage {
+  background-image: url("Images/Its_Me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+  width: 240px;
+  height: 300px;
+}
+
+img.Image {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+img.Line_Art#LineArt_Link {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+img.Vectors {
+  position: relative;
+  display: inline;
+  text-decoration: none;
+  top: 0px;
+  padding: 9px;
+  width: 65px;
+  height: 65px;
+  border: none;
+}
+
+img.Vectors#Git_Margin {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  display: inline;
+  text-decoration: none;
+
+}
+
+input#Submit {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-family: "Fascinate";
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  background: rgb(320, 101, 90);
+  color: rgb(245, 245, 245);
+}
+
+input#Email {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-family: "Fascinate";
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  background: rgb(245, 245, 245);
+  color: rgb(192, 192, 192);
+}
+
+h1 {
+  font-family: "FascinateInline";
+  color: rgb(95, 44, 250);
+  text-align: center;
+  font-size: 65px;
+}
+
+header.Content {
+  font-family: "FascinateInline";
+  color: rgb(95, 44, 250);
+  text-align: center;
+  font-size: 83px;
+}
+
+p.Paragraph {
+  font-family: "Fascinate";
+  color: rgb(249, 52, 97);
+  text-align: center;
+  font-size: 42px;
+}
+
+h3 {
+  font-family: "FascinateInline";
+  color: rgb(249, 52, 97);
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "FascinateInline";
+  color: rgb(10, 240, 260);
+  text-align: center;
+  font-size: 55px;
+}
+
+a {
+  font-family: "Fascinate";
+  /* background-color: rgb(50, 60, 80); */
+  color: rgb(200, 340, 109);
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+img.card-img-top {
+  text-align: center;
+  justify-content: center;
+  width: 400px;
+  height: 720px;
+}
+
+/* Map */
+.map {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgb(200, 340, 109);
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+/* Side Menu */
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: rgba(0, 0, 100, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: rgb(200, 340, 109);
+  padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: rgb(200, 340, 109);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: rgb(200, 340, 109);
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: rgb(200, 340, 109);
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgb(200, 340, 109);
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
