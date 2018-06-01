@@ -1,11 +1,11 @@
 (function($) {
-  "use strict"; // Start of use strict
+  'use strict'; // Start of use strict
   // Closes the sidebar menu
-  $(".menu-toggle").click(function(e) {
+  $('.menu-toggle').click(function(e) {
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
-    $(this).toggleClass("active");
+    $('#sidebar-wrapper').toggleClass('active');
+    $('.menu-toggle > .fa-bars, .menu-toggle > .fa-times').toggleClass('fa-bars fa-times');
+    $(this).toggleClass('active');
   });
 
   // Smooth scrolling using jQuery easing
@@ -16,7 +16,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, "easeInOutExpo");
+        }, 1000, 'easeInOutExpo');
         return false;
       }
     }
@@ -24,9 +24,9 @@
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {
-    $("#sidebar-wrapper").removeClass("active");
-    $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+    $('#sidebar-wrapper').removeClass('active');
+    $('.menu-toggle').removeClass('active');
+    $('.menu-toggle > .fa-bars, .menu-toggle > .fa-times').toggleClass('fa-bars fa-times');
   });
 
 })(jQuery); // End of use strict
@@ -39,14 +39,14 @@ var onMapMouseleaveHandler = function(event) {
   var that = $(this);
   that.on('click', onMapClickHandler);
   that.off('mouseleave', onMapMouseleaveHandler);
-  that.find('iframe').css("pointer-events", "none");
+  that.find('iframe').css('pointer-events', 'none');
 }
 var onMapClickHandler = function(event) {
   var that = $(this);
   // Disable the click handler until the user leaves the map area
   that.off('click', onMapClickHandler);
   // Enable scrolling zoom
-  that.find('iframe').css("pointer-events", "auto");
+  that.find('iframe').css('pointer-events', 'auto');
   // Handle the mouse leave event
   that.on('mouseleave', onMapMouseleaveHandler);
 }
