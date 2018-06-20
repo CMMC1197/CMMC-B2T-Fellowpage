@@ -170,6 +170,11 @@ p.Paragraph {
   font-size: 34px;
 }
 
+option {
+  text-align: center;
+  justify-content: center;
+}
+
 p.card-text {
   font-family: "Fascinate";
   color: rgb(300, 300, 300);
